@@ -1,0 +1,54 @@
+.l-header {
+  background: $color-main;
+  padding: 16px 0;
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 0;
+      padding-left: 0;
+      max-width: 100%;
+    }
+    h1 {
+      a {
+        background-image: url(../img/logo-new_工作區域\ 1.png);
+        background-size: cover;
+        width: 80px;
+        height: 49px;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        float: left;
+        @media (max-width: 767px) {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
+
+.header-menu {
+  justify-content: space-between;
+  li {
+    color: #ffffff;
+    a {
+      color: #ffffff;
+      &:hover {
+        color: #ffffffb2;
+      }
+    }
+    @media (max-width: 767px) {
+      border: 1px solid #ffffff;
+      width: 50%;
+      margin-right: 0;
+      text-align: center;
+      padding: 12px 0;
+    }
+  }
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #aa0601;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.text-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.mr-64 {
+  margin-right: 64px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.l-header {
+  background: #aa0601;
+  padding: 16px 0;
+}
+.l-header .header {
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .l-header .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 100%;
+  }
+}
+.l-header .header h1 a {
+  background-image: url(../img/logo-new_工作區域\ 1.png);
+  background-size: cover;
+  width: 80px;
+  height: 49px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+@media (max-width: 767px) {
+  .l-header .header h1 a {
+    margin: 0 0 16px 16px;
+  }
+}
+
+.header-menu {
+  justify-content: space-between;
+}
+.header-menu li {
+  color: #ffffff;
+}
+.header-menu li a {
+  color: #ffffff;
+}
+.header-menu li a:hover {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+@media (max-width: 767px) {
+  .header-menu li {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin-right: 0;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-menu {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.footer {
+  background: #aa0601;
+  padding-top: 60px;
+}
+.footer .footer-list {
+  color: #ffffff;
+}
+.footer .footer-list .footer-menu {
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-list .footer-menu a {
+  color: #ffffff;
+}
+.footer .footer-list .footer-menu a:hover {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+@media (max-width: 767px) {
+  .footer .footer-list .footer-menu {
+    display: none;
+  }
+}
+
+.footer-social img {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 767px) {
+  .footer-contact .tel-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer-contact .tel-box .tel {
+  align-items: center;
+}
+.footer-contact .tel-box .tel span {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  .footer-contact .tel-box .tel span {
+    font-size: 20px;
+  }
+}
+.footer-contact .tel-box .tel p {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  .footer-contact .tel-box .tel p {
+    font-size: 16px;
+  }
+}
+.footer-contact .tel-box .tel-img {
+  display: none;
+}
+@media (max-width: 767px) {
+  .footer-contact .tel-box .tel-img {
+    display: flex;
+  }
+}
+.footer-contact .tel-box .tel-img img {
+  width: 24px;
+  height: 24px;
+}
+.footer-contact .email {
+  align-items: center;
+}
+.footer-contact .email span {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  .footer-contact .email span {
+    font-size: 20px;
+  }
+}
+.footer-contact .email p {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  .footer-contact .email p {
+    font-size: 16px;
+  }
+}
+
+.footer-end {
+  justify-content: space-between;
+  padding: 32px 0;
+  border-top: 1px solid #ffffff;
+}
+@media (max-width: 767px) {
+  .footer-end {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .footer-end p {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-end .footer-end-list {
+    flex-direction: column;
+  }
+}
+.footer-end .footer-end-list p {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .footer-end .footer-end-list .footer-text {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=all.css.map */
